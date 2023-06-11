@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,-25"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,-25"
+    />
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <title>IComerce</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <span class="material-symbols-outlined">menu</span>
+        </label>
+
+        <img class="logo" src="img/IComerce_semfundo.png" />
+
+        <!-- <form class="nav-input">
+          <input
+            type="search"
+            placeholder="Buscar roupas novas, em destaque, de promoção"
+          />
+          <button type="submit">
+            <span class="material-symbols-outlined">search</span>
+          </button>
+        </form> -->
+
+        <ul class="nav-list">
+          <li><a href="#">Entrar</a></li>
+          <li><a href="#">Cadastar</a></li>
+          <li><a href="#">Meu Perfil</a></li>
+          <li><a href="#">Pedidos</a></li>
+        </ul>
+
+        <button class="nav-carrinho">
+          <a href="#">
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </a>
+        </button>
+      </nav>
+    </header>
+
+    <aside>
+      <div class="filter">
+        <h1>Filtro de Roupas</h1>
+        <br />
+        <div class="tipo-roupa">
+          <select id="tipo">
+            <option selected>Escolher...</option>
+            <option value="1">Masculino</option>
+            <option value="2">Feminino</option>
+            <option value="3">Infantil</option>
+          </select>
+          <label for="tipo">Categoria</label>
+        </div>
+        <br />
+        <!-- <div class="tecido-roupa">
+          <select id="tecido">
+            <option selected>Escolher...</option>
+            <option value="1">Algodão</option>
+            <option value="2">Algodão Sintético</option>
+            <option value="3">Poliester</option>
+            <option value="4">Lã</option>
+          </select>
+          <label for="tecido">Tipo de Tecido</label>
+        </div> -->
+        <br />
+        <!-- <div class="estilo-roupa">
+          <select id="estilo">
+            <option selected>Escolher...</option>
+            <option value="1">Polo</option>
+            <option value="2">Tie Dye</option>
+            <option value="3">Lisa</option>
+            <option value="4">Estampada</option>
+          </select>
+          <label for="estilo">Tipo de Estilo</label>
+        </div> -->
+        <br />
+        <div class="preco">
+          <form>
+            <label for="preco1">$</label>
+            <input type="search" id="search" />
+            <!-- <label for="preco2">$</label>
+            <input type="search" id="preco2" /> -->
+            <button type="submit">
+              <span class="material-symbols-outlined">search</span>Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="slides">
+          <input type="radio" name="slide" id="slide1" checked />
+          <input type="radio" name="slide" id="slide2" />
+          <input type="radio" name="slide" id="slide3" />
+          <input type="radio" name="slide" id="slide4" />
+          <input type="radio" name="slide" id="slide5" />
+
+          <div class="slide s1">
+            <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="roupa1" />
+          </div>
+          <div class="slide">
+            <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="roupa2" />
+          </div>
+          <div class="slide">
+            <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" alt="roupa3" />
+          </div>
+          <div class="slide">
+            <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" alt="roupa3" />
+          </div>
+          <div class="slide">
+            <img src="https://www.w3schools.com/howto/img_5terre_wide.jpg" alt="roupa3" />
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <label class="bar" for="slide1"></label>
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+        <label class="bar" for="slide4"></label>
+        <label class="bar" for="slide5"></label>
+      </div>
+    </aside>
+
+    <br><br><br>
+
+    <main>
+      <div class="container">
+        <div class="conteudo">
+          <div class="box-conteudo">
+            <div class="box">
+              <img src="img/td-azul.jpg" />
+              <p>Camisa Tie-dye - Azul</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 29,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/pl-verde.jpg" />
+              <p>Camisa Polo - Verde</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 89,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/ce-naruto.jpg" />
+              <p>Camisa Preta - Estampa do Naruto</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 65,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/cn-preta.jpg" />
+              <p>Camisa Nike - Preta</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 34,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/ct-branco.jpg" />
+              <p>Camisa Thrasher - Branca</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 167,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/ci-brilhante.jpg" />
+              <p>Camisa Infantil - Estampa Brilhante</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 67,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/td-verde.jpg" />
+              <p>Camisa Tie-dye - Verde</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 34,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/ce-sasuke.jpg" />
+              <p>Camisa Preta - Estampa do Sasuke</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 96,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/cn-vermelha.jpg" />
+              <p>Camisa Nike - Vermelha</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 67,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/ct-amarelo.jpg" />
+              <p>Camisa Thrasher - Amarela</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 456,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/ci-brasil.jpg" />
+              <p>Camisa Infantil - Brasil</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 46,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/pl-azul.jpg" />
+              <p>Camisa Polo - Azul</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 234,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/pl-vermelha.jpg" />
+              <p>Camisa Polo - Vermelha</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 64,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/ci-urso.jpg" />
+              <p>Camisa Infantil - Estampa de Ursinho</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 65,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/ct-preto.jpg" />
+              <p>Camisa Thrasher - Preta</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 124,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/cn-branca.jpg" />
+              <p>Camisa Nike - Branca</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 69,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/ce-kakashi.jpg" />
+              <p>Camisa Branca - Estampa do Kakashi</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 67,90</p>
+            </div>
+
+            <div class="box">
+              <img src="img/td-rosa.jpg" />
+              <p>Camisa Tie-dye - Rosa</p>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 90,90</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="barra-lateral">
+          <div class="box-produto">
+            <h1 class="titulo-produto">Produtos em Destaque</h1>
+            <div class="produto-recente" id="pr5">
+              <img src="img/sb.jpg" />
+              <h1>Shoulder Bag</h1>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 80,90</p>
+            </div>
+
+            <div class="produto-recente" id="pr1">
+              <img src="img/pochete.jpg" />
+              <h1>Pochete</h1>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 70,90</p>
+            </div>
+
+            <div class="produto-recente" id="pr2">
+              <img src="img/chapeu.jpg" />
+              <h1>Chapeu Bucket</h1>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 100,90</p>
+            </div>
+
+            <div class="produto-recente" id="pr3">
+              <img src="img/bone.jpg" />
+              <h1>Boné</h1>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 80,90</p>
+            </div>
+
+            <div class="produto-recente" id="pr4">
+              <img src="img/oculos.jpg" />
+              <h1>Óculos Escuros</h1>
+              <span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star</span
+              ><span class="material-symbols-outlined">star_half</span>
+              <p class="price">R$ 40,90</p>
+
+              <button type="submit">Veja Mais</button>
+            </div>
+
+            <div class="produto-recente" id="pr6">
+              <h2>Receba Promoções!!</h2>
+              <p>Insira seu Email abaixo:</p>
+              <input type="email" />
+
+              <button type="submit">Entre Agora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="prt-f">
+        <div class="conteudo-final">
+          <div class="payment">
+            <h1>Formas de Pagamento</h1>
+            <img src="img/metodos de pagamento.png" />
+          </div>
+
+          <div class="links-help">
+            <h1>Links Rápidos</h1>
+            <ul>
+              <li><a href="#">Ajuda</a></li>
+              <li><a href="#">Politica</a></li>
+              <li><a href="#">Cancelamentos</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacidade</a></li>
+            </ul>
+          </div>
+
+          <div class="social">
+            <h1>Nossas Redes</h1>
+            <img src="img/redes.png" />
+          </div>
+
+          <div class="contato">
+            <h1>Fale conosco</h1>
+            <span class="material-symbols-outlined">inbox</span>
+            <a href="#">TIPS@ECOMERCE.com.cont</a>
+            <li><a href="#">Gabriel Henrique Diniz Silva - Sistemas de Informção - 804862</a></li>
+            <p>
+              <strong
+                ><span class="material-symbols-outlined">call</span>0800 1200
+                13</strong
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rodape">
+        <div class="copyright">
+          <p>&copy; CopyRight 2023 ECOMERCE</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
