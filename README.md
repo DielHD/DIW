@@ -2,7 +2,9 @@
 Trbalho de Diw da Puc Minas 
 
 Proposta: Fazer um site de ECORMERCE usando a Fake Store API
+
 Requisitos: 
+
 O site que você fará deve atender aos seguintes requisitos
 
 o site deve ser publicado em um ambiente da Internet (Repl.it, GitHub Pages, Netlify ou outro a sua escolha); 
