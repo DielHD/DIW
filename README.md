@@ -1,7 +1,7 @@
 # Diw
 Trbalho de Diw da Puc Minas 
 
-Link do Replit: trabalho-diw.hdgabrielsilva.repl.co
+Link do Replit: (https://trabalho-diw--hdgabrielsilva.repl.co/)
 
 Proposta: Fazer um site de ECORMERCE usando a Fake Store API
 
